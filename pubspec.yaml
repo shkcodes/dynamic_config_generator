@@ -1,6 +1,6 @@
 name: dynamic_config_generator
 description: Dynamically generate config for a build variant using a json file
-version: 0.0.2
+version: 0.1.0
 homepage: https://github.com/shkcodes/dynamic_config_generator
 
 environment:
