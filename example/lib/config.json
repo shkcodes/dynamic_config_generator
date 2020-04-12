@@ -1,0 +1,10 @@
+{
+  "debug": {
+    "is_release": false,
+    "api_key": "api_key_debug"
+  },
+  "release": {
+    "is_release": true,
+    "api_key": "api_key_release"
+  }
+}
