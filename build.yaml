@@ -1,13 +1,14 @@
 targets:
-  dynamic_config_generator:dynamic_config_generator:
+  $default:
     builders:
-      dynamic_config_generator|config_builder:
-        enabled: true
+      config_builder:
+        generate_for:
+          - tool/*
 
 builders:
   config_builder:
     import: "package:dynamic_config_generator/dynamic_config_generator.dart"
     builder_factories: ["configBuilder"]
-    build_extensions: {".json": ["build_config.g.part"]}
+    build_extensions: {"config.json": ["build_config.g.part"]}
     build_to: source
     auto_apply: dependents

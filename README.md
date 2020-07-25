@@ -1,13 +1,15 @@
 # dynamic_config_generator
 
-Dynamically generate config for a build variant from a json file
+Generate configuration constants for different environments from a json file.
 
 ## How to use
 
-1. Create a configuration json file which contains the keys for a particular variant (check out the example)
-2. Execute `flutter packages pub run build_runner build --define "dynamic_config_generator|config_builder=variant=$variant"`
+1. Create a `config.json` file  within the `tool` directory which contains the keys for a particular variant (check out the Example section for more)
+2. Execute `flutter packages pub run build_runner build --define "dynamic_config_generator|config_builder=variant=$variant"`. The value of the variant would be `debug`or `release` for the example below. 
+> You can supply **$variant** via an environment variable in your CI setup.
+
 3. This will create `build_config.g.dart` in your `lib` folder
-4. That's it! Go ahead and use the `BuildConfig` constants.
+4. Import this file in the relevant classes and use the generated `BuildConfig` constants.
 
 ## Example
 
@@ -24,7 +26,7 @@ Dynamically generate config for a build variant from a json file
 }
 ```
 
-will generate the file `build_config.g.dart` with the following content if you build for the release varaint.
+will generate the file `build_config.g.dart` with the following content if you build for the release variant.
 ```
 abstract class BuildConfig {
   static const IS_RELEASE = 'true';
