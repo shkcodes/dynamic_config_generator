@@ -13,3 +13,7 @@
 ## [0.2.1] - 18-10-2021
 
 * Update dependencies
+
+## [0.2.2] - 21-12-2021
+
+* Only build for config.json
