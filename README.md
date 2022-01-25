@@ -16,12 +16,12 @@ Generate configuration constants for different environments from a json file.
 ```
 {
   "debug": {
-    "is_release": false,
-    "api_key": "api_key_debug"
+    "isRelease": false,
+    "apiKey": "apiKeyDebug"
   },
   "release": {
-    "is_release": true,
-    "api_key": "api_key_release"
+    "isRelease": true,
+    "apiKey": "apiKeyRelease"
   }
 }
 ```
@@ -29,7 +29,7 @@ Generate configuration constants for different environments from a json file.
 will generate the file `build_config.g.dart` with the following content if you build for the release variant.
 ```
 abstract class BuildConfig {
-  static const IS_RELEASE = 'true';
-  static const API_KEY = 'api_key_release';
+  static const isRelease = 'true';
+  static const apiKey = 'apiKeyRelease';
 }
 ```

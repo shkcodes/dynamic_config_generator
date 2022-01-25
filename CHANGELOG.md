@@ -17,3 +17,7 @@
 ## [0.2.2] - 21-12-2021
 
 * Only build for config.json
+
+## [0.3.0] - 25-12-2021
+
+* Avoid capitalizing constant names
