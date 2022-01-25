@@ -32,12 +32,12 @@ class ConfigBuilder extends Builder {
       final value = values[key];
       if (value is int) {
         output.add(
-            '\tstatic const ${key.toUpperCase()} = ${int.parse(value.toString())};');
+            '\tstatic const $key = ${int.parse(value.toString())};');
       } else if (value is String) {
         output.add(
-            '\tstatic const ${key.toUpperCase()} = \'${value.toString()}\';');
+            '\tstatic const $key = \'${value.toString()}\';');
       } else if (value is bool) {
-        output.add('\tstatic const ${key.toUpperCase()} = ${value == true};');
+        output.add('\tstatic const $key = ${value == true};');
       }
     }
     output.add('}');

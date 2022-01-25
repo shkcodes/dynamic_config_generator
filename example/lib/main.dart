@@ -31,11 +31,11 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("is_release = ${BuildConfig.IS_RELEASE}"),
+            Text("is_release = ${BuildConfig.isRelease}"),
             SizedBox(
               height: 20,
             ),
-            Text("api_key = ${BuildConfig.API_KEY}"),
+            Text("api_key = ${BuildConfig.apiKey}"),
           ],
         ),
       ),
