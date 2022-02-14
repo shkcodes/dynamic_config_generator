@@ -40,7 +40,7 @@ class ConfigBuilder extends Builder {
         output.add('\tstatic const $key = ${value == true};');
       }
     }
-    output.add('}');
+    output.add('}\n');
     final file = File('lib/build_config.g.dart');
     await file.writeAsString(output.join('\n'));
   }
