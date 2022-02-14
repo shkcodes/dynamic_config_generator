@@ -21,3 +21,7 @@
 ## [0.3.0] - 25-12-2021
 
 * Avoid capitalizing constant names
+
+## [0.3.1] - 14-02-2022
+
+* Append a newline character at the end of the file
