@@ -31,11 +31,9 @@ class ConfigBuilder extends Builder {
     for (var key in values.keys) {
       final value = values[key];
       if (value is int) {
-        output.add(
-            '\tstatic const $key = ${int.parse(value.toString())};');
+        output.add('  static const $key = ${int.parse(value.toString())};');
       } else if (value is String) {
-        output.add(
-            '\tstatic const $key = \'${value.toString()}\';');
+        output.add('  static const $key = \'${value.toString()}\';');
       } else if (value is bool) {
         output.add('\tstatic const $key = ${value == true};');
       }
