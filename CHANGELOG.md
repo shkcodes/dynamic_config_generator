@@ -25,3 +25,7 @@
 ## [0.3.1] - 14-02-2022
 
 * Append a newline character at the end of the file
+
+## [0.3.2] - 14-02-2022
+
+* Use spaces instead of tabs to fix dart formatter issues
