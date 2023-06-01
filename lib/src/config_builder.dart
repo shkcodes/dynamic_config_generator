@@ -22,7 +22,7 @@ class ConfigBuilder extends Builder {
     }
     Map<String, dynamic> parsedJson = jsonDecode(rawJson);
     final variant = options.config['variant'] ?? 'debug';
-    final values = parsedJson[variant] as Map<String, dynamic>;
+    final values = parsedJson[variant] as Map<String, dynamic>?;
     if (values == null) {
       throw Exception('supplied variant not found in json');
     }
