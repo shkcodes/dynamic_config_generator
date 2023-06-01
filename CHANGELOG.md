@@ -29,3 +29,7 @@
 ## [0.3.2] - 14-02-2022
 
 * Use spaces instead of tabs to fix dart formatter issues
+
+## [0.4.0] - 01-06-2023
+
+* Add null safety support
