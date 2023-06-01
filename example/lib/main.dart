@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({required this.title});
 
   final String title;
 
@@ -32,9 +32,7 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text("is_release = ${BuildConfig.isRelease}"),
-            SizedBox(
-              height: 20,
-            ),
+            SizedBox(height: 20),
             Text("api_key = ${BuildConfig.apiKey}"),
           ],
         ),
