@@ -8,6 +8,9 @@ Generate configuration constants for different environments from a json file.
 2. Execute `flutter packages pub run build_runner build --define "dynamic_config_generator|config_builder=variant=$variant"`. The value of the variant would be `debug`or `release` for the example below. 
 > You can supply **$variant** via an environment variable in your CI setup.
 
+> You will need to escape the inverted commas on Windows, so the command becomes `flutter packages pub run build_runner build --define """dynamic_config_generator|config_builder=variant=$variant"""`
+
+
 3. This will create `build_config.g.dart` in your `lib` folder
 4. Import this file in the relevant classes and use the generated `BuildConfig` constants.
 
