@@ -33,3 +33,7 @@
 ## [0.4.0] - 01-06-2023
 
 * Add null safety support
+
+## [0.5.0] - 22-07-2025
+
+* Update Flutter dependencies
