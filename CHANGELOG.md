@@ -37,3 +37,7 @@
 ## [0.5.0] - 22-07-2025
 
 * Update Flutter dependencies
+* 
+## [0.5.1] - 23-07-2025
+
+* Update build dependency for compatibility with Freezed
