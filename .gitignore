@@ -76,3 +76,4 @@ build/
 
 # Packages should not have a lock file
 pubspec.lock
+!example/pubspec.lock
