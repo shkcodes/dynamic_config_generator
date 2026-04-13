@@ -1,17 +1,17 @@
 name: dynamic_config_generator
 description: Dynamically generate config for a build variant using a json file
-version: 0.5.1
+version: 0.5.2
 homepage: https://github.com/shkcodes/dynamic_config_generator
 
 environment:
   sdk: ">=3.3.0 <4.0.0"
 
 dependencies:
-  build: ^3.0.0
+  build: ^4.0.0
 
 dev_dependencies:
-  build_config: ^1.1.0
-  build_runner: ^2.5.4
+  build_config: ^1.2.0
+  build_runner: ^2.10.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
